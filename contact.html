@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1;">
+<title>Stinnia - CONTACT</title>
+
+<link href="styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="background">
+  <nav id="stickynav">
+    <ul>
+      <li><a href="index.php">HOME</a></li>
+      <li><a href="about.php">WHO AM I?</a></li>
+      <li><a href="work.php">MY WORK</a></li>
+      <li><a class="active" href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+<div class="background">
+	 <div class="content">
+	<h2 class="kontakt">Send me a message here</h2>
+      <div class="contact_container">
+        <div class="left"> </div>
+        <div class="right">
+          <div class="formBox">
+            <form action="mailto:stinniahk@gmail.com" method="post" enctype="text/plain">
+              <p>Name</p>
+              <input type="text" name="name" placeholder="Fulde navn" required>
+              <p>E-mail adresse:</p>
+              <input type="email" name="mail" placeholder="Email addresse" required>
+              <p>Message:</p>
+              <textarea name="message" placeholder="Din besked"></textarea>
+              <input name="submit" type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+		 
+<script>
+	function myFunction (){
+		var element = document.getElementById("stickynav");
+		
+		element.classList.toggle("myStyle");
+	}
+</script>			 
+		 
+		 </div></div>
+	<footer>
+      <h2> &copy; Stinnia, <?php echo date("Y"); ?></h2>
+    </footer>
+</body>
+</html>
